@@ -1,17 +1,55 @@
 'use strict';
 
-var name = prompt('What is your name? ');
+var answer1 = prompt('We\'re going to play a guessing game about me. Are you ready? Yes or no answers only please');
+if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+  alert('Sweet, let\'s do this.');
+} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  alert('Don\'t care we\'re going to do it anyway.');
+} else {
+  alert('Remember yes or no answers only please. Here we go.');
+}
 
-alert('Hello! ' + name);
+var answer2 = prompt('Do I have a dog named Pistol Pete?');
+if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+  alert('You\'re god damn right I do');
+} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  alert('You\'re wrong sorry.');
+} else {
+  alert('Remember yes or no answers only please.');
+}
 
-var home = prompt('Where are you from?');
+var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
+if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+  alert('You shouldn\'t have. I like soccer but I\'m nowhere near that good.');
+} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  alert('Correct. I was shit compared to those guys.');
+} else {
+  alert('Remember yes or no answers only please.');
+}
 
-alert('Hello! ' + name + ' from ' + home);
+var answer4 = prompt('Do I play the guitar?');
+if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+  alert('You are correct. I am terrible at it though.');
+} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  alert('You\'re wrong sorry.');
+} else {
+  alert('Remember yes or no answers only please.');
+}
 
-var hobby = prompt('What is your favorite hobby?');
+var answer5 = prompt('');
+if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+  alert('');
+} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  alert('You\'re wrong sorry.');
+} else {
+  alert('Remember yes or no answers only please.');
+}
 
-alert('Hello! ' + name + ' from ' + home + '. I also enjoy ' + hobby);
-
-var place = prompt('Where is you favorite place to visit? ');
-
-alert('Hello! ' + name + ' from ' + home + '. I also enjoy ' + hobby + ' while visiting ' + place);
+var answer2 = prompt('Do I have a dog named Pistol Pete?');
+if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+  alert('You\'re god damn right I do');
+} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  alert('You\'re wrong sorry.');
+} else {
+  alert('Remember yes or no answers only please.');
+}
