@@ -1,47 +1,17 @@
-
 'use strict';
 
-var answer1 = prompt('We\'re going to play a guessing game about me. Are you ready? Yes or no answers only please');
-if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-  alert('Sweet, let\'s do this.');
-} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-  alert('Well we\'re going to do it anyway.');
-} else {
-  alert('Don'\'t care we\'re still doing it');
-}
+var name = prompt('What is your name? ');
 
-var answer2 = prompt('');
-if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-  alert('');
-} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-  alert('');
-} else {
-  alert('');
-}
+alert('Hello! ' + name);
 
-var answer3 = prompt('');
-if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-  alert('');
-} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-  alert('');
-} else {
-  alert('');
-}
+var home = prompt('Where are you from?');
 
-var answer4 = prompt('');
-if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-  alert('');
-} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-  alert('');
-} else {
-  alert('');
-}
+alert('Hello! ' + name + ' from ' + home);
 
-var answer5 = prompt('');
-if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-  alert('');
-} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-  alert('');
-} else {
-  alert('');
-}
+var hobby = prompt('What is your favorite hobby?');
+
+alert('Hello! ' + name + ' from ' + home + '. I also enjoy ' + hobby);
+
+var place = prompt('Where is you favorite place to visit? ');
+
+alert('Hello! ' + name + ' from ' + home + '. I also enjoy ' + hobby + ' while visiting ' + place);
