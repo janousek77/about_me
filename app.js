@@ -8,53 +8,54 @@ if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
 } else {
   alert('Remember yes or no answers only please. Here we go.');
 };
-
+console.log(answer);
 
 var answer2 = prompt('Do I have a dog named Pistol Pete?');
 if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
   alert('You\'re god damn right I do');
 } else if (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n') {
-  alert('You\'re wrong sorry.');
+  alert('You\'re wrong that is my dog\'s name and he\'s awesome');
 } else {
   alert('Remember yes or no answers only please.');
 };
-
+console.log(answer2);
 
 var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
 if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y') {
   alert('You shouldn\'t have. I like soccer but I\'m nowhere near that good.');
-} else if (answer3.toLowerCase() === 'no' || answer.3toLowerCase() === 'n') {
+} else if (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n') {
   alert('Correct. I was shit compared to those guys.');
 } else {
   alert('Remember yes or no answers only please.');
 };
-
+console.log(answer3);
 
 var answer4 = prompt('Do I play the guitar?');
 if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
   alert('You are correct. I am terrible at it though.');
 } else if (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n') {
-  alert('You\'re wrong sorry.');
+  alert('You\'re wrong at least you don\'t have to hear me play.');
 } else {
   alert('Remember yes or no answers only please.');
 };
-
+console.log(answer4);
 
 var answer5 = prompt('Would you believe I once stepped on a pile of rattlesnakes?');
 if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
   alert('You\'ve guessd correctly that shit was terrifying');
 } else if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
-  alert('You\'re wrong sorry.');
+  alert('You\'re wrong that shit was terrifying.');
 } else {
   alert('Remember yes or no answers only please.');
 };
-
+console.log(answer5);
 
 var answer6 = prompt('Would you believe that I moved to Seattle because I love the weather?');
 if (answer6.toLowerCase() === 'yes' || answer6.toLowerCase() === 'y') {
   alert('You\'re right. The sun is bullshit.');
 } else if (answer6.toLowerCase() === 'no' || answer6.toLowerCase() === 'n') {
-  alert('You\'re wrong sorry.');
+  alert('You\'re wrong. I hate the sun.');
 } else {
   alert('Remember yes or no answers only please.');
 };
+console.log(answer6);
