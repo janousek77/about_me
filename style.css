@@ -1,8 +1,10 @@
 body {
-margin: 200px;
-font-family: georgie;
+margin-left: 300px;
+margin-right: 300px;
+margin-top: 50px;
+background-color: #02e3fc;
 }
 
 strong {
-    background-color: #00F076;
+    background-color: #02f9ab;
 }
