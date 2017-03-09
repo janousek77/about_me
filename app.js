@@ -51,7 +51,7 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
 console.log(answer5);
 
 var num = Math.floor(Math.random() * 100) + 1;
-var hint = 'Guess my number, 1-100!';
+var hint = 'Guess a number between 1-100!';
 for (var turns = 10; turns >= 0; turns--) {
   var guess = parseInt(prompt(hint + ' You have ' + turns + ' guesses left.'));
   if (guess === num) {

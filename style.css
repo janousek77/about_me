@@ -1,9 +1,13 @@
 body {
 
-margin: 50px 300px 20px  300px
+margin: 50px 300px 20px  300px;
 background-color: #02e3fc;
 }
 
 strong {
     background-color: #02f9ab;
+}
+
+span{
+  float: right;
 }
