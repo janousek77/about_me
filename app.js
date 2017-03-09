@@ -65,18 +65,17 @@ for (var turns = 10; turns >= 0; turns--) {
     alert('That\'s not a number');
   } else if (turns === 0) {
     alert('Sorry the number was ' + num + '. Try again');
-}
+  }
 }
 alert('Thanks for playing');
 
-var arrAns = ['germany', 'italy' , 'japan']
-var question = prompt('What are one of the three countries I\'d like to visit most')
-var ans = true
-while (arrAns === ans)
-  if (arrAns.toLowerCase() === [0} || [1] || [2]) {
-  alert('You\'re right that is a place I\'d like to visit')
-  console.log(arrAns)
-} else {
-  alert('Nope. Guess again.')
-  console.log(arrAns)
+var arrAns = ['germany', 'italy' , 'japan'];
+for (var i = 0; i < arrAns.length; i++) {
+  var question = prompt('What are one of the three countries I\'d like to visit most');
+  if (arrAns.includes(question.toLowerCase())) {
+    alert('You\'re right that is a place I\'d like to visit');
+    break;
+  } else {
+    alert('Nope. Guess again.');
+  }
 }
