@@ -50,12 +50,34 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
 };
 console.log(answer5);
 
-var answer6 = prompt('Would you believe that I moved to Seattle because I love the weather?');
-if (answer6.toLowerCase() === 'yes' || answer6.toLowerCase() === 'y') {
-  alert('You\'re right. The sun is bullshit.');
-} else if (answer6.toLowerCase() === 'no' || answer6.toLowerCase() === 'n') {
-  alert('You\'re wrong. I hate the sun.');
-} else {
-  alert('Remember yes or no answers only please.');
-};
-console.log(answer6);
+var num = Math.floor(Math.random() * 100) + 1;
+var hint = 'Guess a number between 1-100!';
+for (var turns = 10; turns >= 0; turns--) {
+  var guess = parseInt(prompt(hint + ' You have ' + turns + ' guesses left.'));
+  if (guess === num) {
+    alert('Correct ' + num + '.');
+    turns = 0;
+  } else if (guess < num) {
+    alert('Wrong. Too small');
+  } else if (guess > num) {
+    alert('Wrong. Too big!');
+  } else if (guess === null) {
+    alert('That\'s not a number');
+  } else if (turns === 0) {
+    alert('Sorry the number was ' + num + '. Try again');
+  }
+}
+alert('Thanks for playing');
+console.log(num);
+
+var arrAns = ['germany', 'italy' , 'japan' , 'sweden' , 'norway'];
+for (var i = 0; i < arrAns.length; i++) {
+  var question = prompt('What is a country I\'d like to visit most');
+  if (arrAns.includes(question.toLowerCase())) {
+    alert('You\'re right that is a place I\'d like to visit');
+    break;
+  } else {
+    alert('Nope. Guess again.');
+  }
+}
+console.log(arrAns);
