@@ -68,10 +68,11 @@ for (var turns = 10; turns >= 0; turns--) {
   }
 }
 alert('Thanks for playing');
+console.log(num);
 
-var arrAns = ['germany', 'italy' , 'japan'];
+var arrAns = ['germany', 'italy' , 'japan' , 'sweden' , 'norway'];
 for (var i = 0; i < arrAns.length; i++) {
-  var question = prompt('What are one of the three countries I\'d like to visit most');
+  var question = prompt('What is a country I\'d like to visit most');
   if (arrAns.includes(question.toLowerCase())) {
     alert('You\'re right that is a place I\'d like to visit');
     break;
@@ -79,3 +80,4 @@ for (var i = 0; i < arrAns.length; i++) {
     alert('Nope. Guess again.');
   }
 }
+console.log(arrAns);
