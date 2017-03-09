@@ -50,26 +50,6 @@ if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
 };
 console.log(answer5);
 
-var num = Math.floor(Math.random() * 100) + 1;
-var hint = 'Guess a number between 1-100!';
-for (var turns = 10; turns >= 0; turns--) {
-  var guess = parseInt(prompt(hint + ' You have ' + turns + ' guesses left.'));
-  if (guess === num) {
-    alert('Correct ' + num + '.');
-    turns = 0;
-  } else if (guess < num) {
-    alert('Wrong. Too small');
-  } else if (guess > num) {
-    alert('Wrong. Too big!');
-  } else if (guess === null) {
-    alert('That\'s not a number');
-  } else if (turns === 0) {
-    alert('Sorry the number was ' + num + '. Try again');
-  }
-}
-alert('Thanks for playing');
-console.log(num);
-
 var arrAns = ['germany', 'italy' , 'japan' , 'sweden' , 'norway'];
 for (var i = 0; i < arrAns.length; i++) {
   var question = prompt('What is a country I\'d like to visit most');
@@ -81,3 +61,23 @@ for (var i = 0; i < arrAns.length; i++) {
   }
 }
 console.log(arrAns);
+
+var num = Math.floor(Math.random() * 100) + 1;
+var hint = 'Guess a number between 1-100!';
+for (var turns = 10; turns >= 0; turns--) {
+  var guess = parseInt(prompt(hint + ' You have ' + turns + ' guesses left.'));
+  if (guess === num) {
+    alert('Correct ' + num + '.');
+    turns = 0;
+  } else if (guess < num) {
+    alert('Wrong. Too low!');
+  } else if (guess > num) {
+    alert('Wrong. Too high!');
+  } else if (guess === null || isNaN(guess)) {
+    alert('That\'s not a number');
+  } else if (turns === 0) {
+    alert('Sorry the number was ' + num + '. Try again');
+  }
+}
+alert('Thanks for playing');
+console.log(num);
