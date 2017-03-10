@@ -1,6 +1,6 @@
 'use strict';
 
-function answer1() {
+function question1() {
   var answer = prompt('We\'re going to play a guessing game about me. Are you ready? Yes or no answers only please');
   if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
     alert('Sweet, let\'s do this.');
@@ -11,9 +11,9 @@ function answer1() {
   }
   console.log(answer);
 }
-answer1();
+question1();
 
-function answer2() {
+function question2() {
   var answer2 = prompt('Do I have a dog named Pistol Pete?');
   if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
     alert('You\'re god damn right I do');
@@ -24,9 +24,9 @@ function answer2() {
   }
   console.log(answer2);
 };
-answer2();
+question2();
 
-function answer3() {
+function question3() {
   var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
   if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y') {
     alert('You shouldn\'t have. I like soccer but I\'m nowhere near that good.');
@@ -37,17 +37,19 @@ function answer3() {
   }
   console.log(answer3);
 };
-answer3();
+question3();
 
-var answer4 = prompt('Do I play the guitar?');
-if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
-  alert('You are correct. I am terrible at it though.');
-} else if (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n') {
-  alert('You\'re wrong at least you don\'t have to hear me play.');
-} else {
-  alert('Remember yes or no answers only please.');
+function question4() {
+  var answer4 = prompt('Do I play the guitar?');
+  if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
+    alert('You are correct. I am terrible at it though.');
+  } else if (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n') {
+    alert('You\'re wrong at least you don\'t have to hear me play.');
+  } else {
+    alert('Remember yes or no answers only please.');
+  };
+  console.log(answer4);
 };
-console.log(answer4);
 
 var answer5 = prompt('Would you believe I once stepped on a pile of rattlesnakes?');
 if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
