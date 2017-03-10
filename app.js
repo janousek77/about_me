@@ -79,22 +79,25 @@ function question6() {
 };
 question6();
 
-var num = Math.floor(Math.random() * 100) + 1;
-var hint = 'Guess a number between 1-100!';
-for (var turns = 10; turns >= 0; turns--) {
-  var guess = parseInt(prompt(hint + ' You have ' + turns + ' guesses left.'));
-  if (guess === num) {
-    alert('Correct ' + num + '.');
-    turns = 0;
-  } else if (guess < num) {
-    alert('Wrong. Too low!');
-  } else if (guess > num) {
-    alert('Wrong. Too high!');
-  } else if (guess === null || isNaN(guess)) {
-    alert('That\'s not a number');
-  } else if (turns === 0) {
-    alert('Sorry the number was ' + num + '. Try again');
+function question7() {
+  var num = Math.floor(Math.random() * 100) + 1;
+  var hint = 'Guess a number between 1-100!';
+  for (var turns = 10; turns >= 0; turns--) {
+    var guess = parseInt(prompt(hint + ' You have ' + turns + ' guesses left.'));
+    if (guess === num) {
+      alert('Correct ' + num + '.');
+      turns = 0;
+    } else if (guess < num) {
+      alert('Wrong. Too low!');
+    } else if (guess > num) {
+      alert('Wrong. Too high!');
+    } else if (guess === null || isNaN(guess)) {
+      alert('That\'s not a number');
+    } else if (turns === 0) {
+      alert('Sorry the number was ' + num + '. Try again');
+    }
   }
-}
-console.log(num);
-alert('Thanks for playing');
+  console.log(num);
+  alert('Thanks for playing');
+};
+question7();
