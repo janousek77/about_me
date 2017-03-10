@@ -47,19 +47,22 @@ function question4() {
     alert('You\'re wrong at least you don\'t have to hear me play.');
   } else {
     alert('Remember yes or no answers only please.');
-  };
+  }
   console.log(answer4);
 };
 
-var answer5 = prompt('Would you believe I once stepped on a pile of rattlesnakes?');
-if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
-  alert('You\'ve guessd correctly that shit was terrifying');
-} else if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
-  alert('You\'re wrong that shit was terrifying.');
-} else {
-  alert('Remember yes or no answers only please.');
+function question5() {
+  var answer5 = prompt('Would you believe I once stepped on a pile of rattlesnakes?');
+  if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
+    alert('You\'ve guessd correctly that shit was terrifying');
+  } else if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
+    alert('You\'re wrong that shit was terrifying.');
+  } else {
+    alert('Remember yes or no answers only please.');
+  }
+  console.log(answer5);
 };
-console.log(answer5);
+question5();
 
 var arrAns = ['germany', 'italy' , 'japan' , 'sweden' , 'norway'];
 for (var i = 0; i < arrAns.length; i++) {
