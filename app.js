@@ -94,8 +94,8 @@ function question7() {
     var guess = parseInt(prompt(hint + ' You have ' + turns + ' guesses left.'));
     if (guess === num) {
       alert('Correct ' + num + '.');
-      turns = 0;
       counter++;
+      turns = 0;
     } else if (guess < num) {
       alert('Wrong. Too low!');
     } else if (guess > num) {
@@ -114,8 +114,8 @@ question7();
 if (counter > 7) {
   alert('Wow, you got a perfect score');
 } else if (counter > 4) {
-  alert('Okay effort, you got ' + counter + ' out of 7.');
+  alert('Commendable ' + counter + ' out of 7.');
 } else {
-  alert('Not that great, you got ' + counter + ' out of 7.');
+  alert('Well that\'s disappointing  ' + counter + ' out of 7.');
 }
 console.log(counter + ' out of 7.');
