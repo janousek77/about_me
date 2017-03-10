@@ -21,20 +21,23 @@ function answer2() {
     alert('You\'re wrong that is my dog\'s name and he\'s awesome');
   } else {
     alert('Remember yes or no answers only please.');
-  };
+  }
   console.log(answer2);
-}
+};
 answer2();
 
-var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
-if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y') {
-  alert('You shouldn\'t have. I like soccer but I\'m nowhere near that good.');
-} else if (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n') {
-  alert('Correct. I was shit compared to those guys.');
-} else {
-  alert('Remember yes or no answers only please.');
+function answer3() {
+  var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
+  if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y') {
+    alert('You shouldn\'t have. I like soccer but I\'m nowhere near that good.');
+  } else if (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n') {
+    alert('Correct. I was shit compared to those guys.');
+  } else {
+    alert('Remember yes or no answers only please.');
+  }
+  console.log(answer3);
 };
-console.log(answer3);
+answer3();
 
 var answer4 = prompt('Do I play the guitar?');
 if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
