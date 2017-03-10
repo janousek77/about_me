@@ -64,17 +64,20 @@ function question5() {
 };
 question5();
 
-var arrAns = ['germany', 'italy' , 'japan' , 'sweden' , 'norway'];
-for (var i = 0; i < arrAns.length; i++) {
-  var question = prompt('What is a country I\'d like to visit most');
-  if (arrAns.includes(question.toLowerCase())) {
-    alert('You\'re right that is a place I\'d like to visit');
-    break;
-  } else {
-    alert('Nope. Guess again.');
+function question6() {
+  var arrAns = ['germany', 'italy' , 'japan' , 'sweden' , 'norway'];
+  for (var i = 0; i < arrAns.length; i++) {
+    var question = prompt('What is a country I\'d like to visit most');
+    if (arrAns.includes(question.toLowerCase())) {
+      alert('You\'re right that is a place I\'d like to visit');
+      break;
+    } else {
+      alert('Nope. Guess again.');
+    }
   }
-}
-console.log(arrAns);
+  console.log(arrAns);
+};
+question6();
 
 var num = Math.floor(Math.random() * 100) + 1;
 var hint = 'Guess a number between 1-100!';
