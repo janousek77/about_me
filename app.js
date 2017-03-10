@@ -13,15 +13,18 @@ function answer1() {
 }
 answer1();
 
-var answer2 = prompt('Do I have a dog named Pistol Pete?');
-if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
-  alert('You\'re god damn right I do');
-} else if (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n') {
-  alert('You\'re wrong that is my dog\'s name and he\'s awesome');
-} else {
-  alert('Remember yes or no answers only please.');
-};
-console.log(answer2);
+function answer2() {
+  var answer2 = prompt('Do I have a dog named Pistol Pete?');
+  if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
+    alert('You\'re god damn right I do');
+  } else if (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n') {
+    alert('You\'re wrong that is my dog\'s name and he\'s awesome');
+  } else {
+    alert('Remember yes or no answers only please.');
+  };
+  console.log(answer2);
+}
+answer2();
 
 var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
 if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y') {
