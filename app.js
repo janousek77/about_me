@@ -1,9 +1,12 @@
 'use strict';
 
+var counter = 0;
+
 function question1() {
   var answer = prompt('We\'re going to play a guessing game about me. Are you ready? Yes or no answers only please');
   if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
     alert('Sweet, let\'s do this.');
+    counter++;
   } else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
     alert('Don\'t care we\'re going to do it anyway.');
   } else {
@@ -17,6 +20,7 @@ function question2() {
   var answer2 = prompt('Do I have a dog named Pistol Pete?');
   if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
     alert('You\'re god damn right I do');
+    counter++;
   } else if (answer2.toLowerCase() === 'no' || answer2.toLowerCase() === 'n') {
     alert('You\'re wrong that is my dog\'s name and he\'s awesome');
   } else {
@@ -30,6 +34,7 @@ function question3() {
   var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
   if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y') {
     alert('You shouldn\'t have. I like soccer but I\'m nowhere near that good.');
+    counter++;
   } else if (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n') {
     alert('Correct. I was shit compared to those guys.');
   } else {
@@ -43,6 +48,7 @@ function question4() {
   var answer4 = prompt('Do I play the guitar?');
   if (answer4.toLowerCase() === 'yes' || answer4.toLowerCase() === 'y') {
     alert('You are correct. I am terrible at it though.');
+    counter++;
   } else if (answer4.toLowerCase() === 'no' || answer4.toLowerCase() === 'n') {
     alert('You\'re wrong at least you don\'t have to hear me play.');
   } else {
@@ -54,7 +60,8 @@ function question4() {
 function question5() {
   var answer5 = prompt('Would you believe I once stepped on a pile of rattlesnakes?');
   if (answer5.toLowerCase() === 'yes' || answer5.toLowerCase() === 'y') {
-    alert('You\'ve guessd correctly that shit was terrifying');
+    alert('You\'ve guessed correctly that shit was terrifying');
+    counter++;
   } else if (answer5.toLowerCase() === 'no' || answer5.toLowerCase() === 'n') {
     alert('You\'re wrong that shit was terrifying.');
   } else {
@@ -70,12 +77,13 @@ function question6() {
     var question = prompt('What is a country I\'d like to visit most');
     if (arrAns.includes(question.toLowerCase())) {
       alert('You\'re right that is a place I\'d like to visit');
+      counter++;
       break;
     } else {
       alert('Nope. Guess again.');
     }
+    console.log(question);
   }
-  console.log(arrAns);
 };
 question6();
 
@@ -87,6 +95,7 @@ function question7() {
     if (guess === num) {
       alert('Correct ' + num + '.');
       turns = 0;
+      counter++;
     } else if (guess < num) {
       alert('Wrong. Too low!');
     } else if (guess > num) {
@@ -101,3 +110,12 @@ function question7() {
   alert('Thanks for playing');
 };
 question7();
+
+if (counter > 7) {
+  alert('Wow, you got a perfect score');
+} else if (counter > 4) {
+  alert('Okay effort, you got ' + counter + ' out of 7.');
+} else {
+  alert('Not that great, you got ' + counter + ' out of 7.');
+}
+console.log(counter + ' out of 7.');
