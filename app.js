@@ -1,14 +1,17 @@
 'use strict';
 
-var answer = prompt('We\'re going to play a guessing game about me. Are you ready? Yes or no answers only please');
-if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-  alert('Sweet, let\'s do this.');
-} else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
-  alert('Don\'t care we\'re going to do it anyway.');
-} else {
-  alert('Remember yes or no answers only please. Here we go.');
-};
-console.log(answer);
+function answer1() {
+  var answer = prompt('We\'re going to play a guessing game about me. Are you ready? Yes or no answers only please');
+  if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+    alert('Sweet, let\'s do this.');
+  } else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+    alert('Don\'t care we\'re going to do it anyway.');
+  } else {
+    alert('Remember yes or no answers only please. Here we go.');
+  }
+  console.log(answer);
+}
+answer1();
 
 var answer2 = prompt('Do I have a dog named Pistol Pete?');
 if (answer2.toLowerCase() === 'yes' || answer2.toLowerCase() === 'y') {
@@ -79,5 +82,5 @@ for (var turns = 10; turns >= 0; turns--) {
     alert('Sorry the number was ' + num + '. Try again');
   }
 }
-alert('Thanks for playing');
 console.log(num);
+alert('Thanks for playing');
