@@ -112,7 +112,7 @@ function question7() {
 };
 question7();
 
-if (counter > 7) {
+if (counter > 6) {
   alert('Wow, you got a perfect score');
 } else if (counter > 4) {
   alert('Commendable ' + counter + ' out of 7.');
