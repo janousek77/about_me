@@ -119,3 +119,8 @@ if (counter > 7) {
   alert('Well that\'s disappointing  ' + counter + ' out of 7.');
 }
 console.log(counter + ' out of 7.');
+
+function sum(a,b){
+  var c = a+b
+  return c;
+}
