@@ -34,9 +34,9 @@ function question3() {
   var answer3 = prompt('Do you believe that I almost made it to the olympics for soccer for a U17 group');
   if (answer3.toLowerCase() === 'yes' || answer3.toLowerCase() === 'y') {
     alert('You shouldn\'t have. I like soccer but I\'m nowhere near that good.');
-    counter++;
   } else if (answer3.toLowerCase() === 'no' || answer3.toLowerCase() === 'n') {
     alert('Correct. I was shit compared to those guys.');
+    counter++;
   } else {
     alert('Remember yes or no answers only please.');
   }
@@ -119,8 +119,3 @@ if (counter > 7) {
   alert('Well that\'s disappointing  ' + counter + ' out of 7.');
 }
 console.log(counter + ' out of 7.');
-
-function sum(a,b){
-  var c = a+b
-  return c;
-}
