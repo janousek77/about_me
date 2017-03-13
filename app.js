@@ -56,6 +56,7 @@ function question4() {
   }
   console.log(answer4);
 };
+question4();
 
 function question5() {
   var answer5 = prompt('Would you believe I once stepped on a pile of rattlesnakes?');
